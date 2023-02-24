@@ -66,7 +66,7 @@ router.get('/home',auth,async(req,res)=>{
     const user = await Loginuser.findOne({ userEmail });
     res.status(200).json({success:true,data:user})
   }catch(err){
-    res.status(500).json({ message: 'Internal server error' });
+    res.status(500).json({success:false, message: 'Internal server error' });
 console.log(err)
   }
 })
