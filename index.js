@@ -1,4 +1,5 @@
 const express = require('express');
+const multer = require('multer');
 const nodemon = require('nodemon');
 const bodyParser = require('body-parser');
 const app = express();
@@ -8,6 +9,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const register = require("./register")(router);
 require("./userinfo")(router);
+require("./assets")(router);
 const cookieParser = require("cookie-parser");
 app.use(cookieParser())
 app.use(express.json())

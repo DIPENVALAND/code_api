@@ -18,13 +18,21 @@ module.exports  =function (router){
             Phone: req.body.Phone,
             Address: req.body.Address,
             Country: req.body.Country,
-            Gander: req.body.Gender,
+            Gender: req.body.Gender,
+            School: req.body.School,
+            Score: req.body.Score,
+            Years: req.body.Years,
+            Collages: req.body.Collages,
+            Course: req.body.Course,
             Grade: req.body.Grade,
             Passingyear: req.body.Passingyear,
-            Course: req.body.Course,
-            Projectlink: req.body.Projectlink,
-            Projectdes: req.body.Projectdes,
-            Skill: req.body.Skill
+            Project: req.body.Project,
+            Plink: req.body.Plink,
+            Pd: req.body.Pd,
+            Skill: req.body.Skill,
+            Git: req.body.Git,
+            Linkdin: req.body.Linkdin,
+            Facebook: req.body.Facebook
             })
 
             let data = await user.save()
